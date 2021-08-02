@@ -13,8 +13,7 @@ FROM employees
 WHERE EXTRACT(YEAR FROM hire_date) = 1986
 ORDER BY hire_date;
 
---List the manager of each department with department number, department name, 
---the manager's employee number, last name, first name.
+--List the manager of each department with department number, department name, manager's employee number, last name, first name.
 
 SELECT d.dept_no, d.dept_name, e.emp_no, e.last_name,e.first_name
 FROM employees e
@@ -26,6 +25,7 @@ WHERE e.emp_title_id LIKE 'm0001'
 ORDER BY d.dept_no;
 
 --List the department of each employee with employee number, last name, first name, and department name.
+
 SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
 FROM employees e
 JOIN dept_emp de
@@ -33,7 +33,8 @@ ON e.emp_no=de.emp_no
 JOIN departments d
 ON de.dept_no=d.dept_no;
 
---List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+--List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B"
+
 SELECT first_name, last_name, sex
 FROM employees
 WHERE first_name LIKE 'Hercules' AND last_name LIKE 'B%';
