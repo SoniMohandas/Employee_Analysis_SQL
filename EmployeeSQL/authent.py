@@ -1,5 +1,5 @@
-# OpenWeatherMap API Key
+# pgAdmin password
 pgadmin_pw = "postgres"
 
-# Google API Key
+# pgAdmin username
 pgadmin_un = "postgres"
