@@ -1,3 +1,4 @@
+--DROP TABLE IF EXISTS "departments";
 
 CREATE TABLE "departments" (
     "dept_no" VARCHAR(5)   NOT NULL,
@@ -7,6 +8,8 @@ CREATE TABLE "departments" (
      )
 );
 
+--DROP TABLE IF EXISTS "dept_emp";
+
 CREATE TABLE "dept_emp" (
     "emp_no" INT   NOT NULL,
     "dept_no" VARCHAR(5)   NOT NULL,
@@ -15,6 +18,8 @@ CREATE TABLE "dept_emp" (
      )
 );
 
+--DROP TABLE IF EXISTS "dept_manager";
+
 CREATE TABLE "dept_manager" (
     "dept_no" VARCHAR(5)   NOT NULL,
     "emp_no" int   NOT NULL,
@@ -22,6 +27,8 @@ CREATE TABLE "dept_manager" (
         "emp_no"
      )
 );
+
+--DROP TABLE IF EXISTS "employees";
 
 CREATE TABLE "employees" (
     "emp_no" INT   NOT NULL,
@@ -36,6 +43,8 @@ CREATE TABLE "employees" (
      )
 );
 
+--DROP TABLE IF EXISTS "salaries";
+
 CREATE TABLE "salaries" (
     "emp_no" INT   NOT NULL,
     "salary" INT   NOT NULL,
@@ -43,6 +52,8 @@ CREATE TABLE "salaries" (
         "emp_no"
      )
 );
+
+--DROP TABLE IF EXISTS "titles";
 
 CREATE TABLE "titles" (
     "title_id" VARCHAR(5)   NOT NULL,
