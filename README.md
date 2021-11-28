@@ -5,7 +5,7 @@ This is a research project on employees of the corporation at Pewlett Hackard fr
 Inspecting csv files and sketch out ERD Model of the tables.  For data modeling http://www.quickdatabasediagrams.com is used.  
 Table schema created with primary keys, composite key, and foreign keys for uniquely identifying a row.  Imported csv files into a SQL database.
 
-https://github.com/SoniMohandas/SQL-Challenge/blob/main/EmployeeSQL/PNG/Emp_ERD_Model.png
+![Emp_ERD_Model](https://user-images.githubusercontent.com/83611005/143726095-ccc4512d-2481-4093-9baf-fc55bba4953b.png)
 
 # Data Analysis
 1. Listing details of each employee with employee number, last name, first name, sex, and salary.
